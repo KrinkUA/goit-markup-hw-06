@@ -88,14 +88,71 @@
                 <use href="./images/icon.svg#vector"></use>
               </svg>
             </button>
+
+            <form class="register-form">
+              <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+              <div class="register-form-group" role="group">
+                <label class="register-form-field">
+                  <span class="register-form-label">Ім'я</span>
+                  <input class="register-form-input" type="text" name="name" />
+                  <svg class="register-form-icon" width="18" height="18">
+                    <use href="./images/icon.svg#form-person"></use>
+                  </svg>
+                </label>
+
+                <label class="register-form-field">
+                  <span class="register-form-label">Телефон</span>
+                  <input
+                    class="register-form-input"
+                    type="tel"
+                    name="phone"
+                    required
+                    minlength="13"
+                    maxlength="13"
+                  />
+                  <svg class="register-form-icon" width="18" height="18">
+                    <use href="./images/icon.svg#form-phone"></use>
+                  </svg>
+                </label>
+
+                <label class="register-form-field">
+                  <span class="register-form-label">Пошта</span>
+                  <input class="register-form-input" type="email" name="mail" />
+                  <svg class="register-form-icon" width="18" height="18">
+                    <use href="./images/icon.svg#form-mail"></use>
+                  </svg>
+                </label>
+
+                <label class="register-form-field">
+                  <span class="register-form-label">Коментар</span>
+                  <textarea class="register-form-massage" name="comment" rows="10" placeholder="Введіть текст"></textarea>
+                </label>
+              </div>
+
+              
+              <label class="register-form-agreement">
+                <input class="register-form-checkbox visually-hidden" type="checkbox" name="checkbox" id="" />
+                <svg class="register-form-icons" width="16" height="15">
+                  <use class="icon-checked" href="./images/icon.svg#icon-checked"></use>
+                  <use class="icon-unchecked" href="./images/icon.svg#icon-unchecked"></use>
+                </svg>
+                <span class="register-form-desc">Погоджуюся з розсилкою та приймаю 
+                  <a class="register-form-link" href="">Умови договору</a>
+                </span>
+              </label>
+
+              <button class="register-form-btn btn" type="submit">Відправити</button>
+            </form>
           </div>
         </div>
       </section>
+
       <!--Особливості-->
       <section class="feature-content section">
         <div class="container features-container">
           <!--Створили заголовок "особливості", який потім приховаємо в CSS-->
-          <h2 hidden>Особливості</h2>
+          <h2 class="visually-hidden">Особливості</h2>
           <ul class="list features-list">
             <li class="list-item feature-item">
               <div class="feature-icon">
@@ -551,6 +608,21 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscrib-group">
+          <strong class="subscrib-title">Підпишіться на розсилку</strong>
+          <div class="subscrib">
+            <label class="subscrib-form-field">
+              <input class="subscrib-input" type="email" name="subscrib" placeholder="E-mail"/>
+            </label>
+            
+            <button class="subscrib-btn" type="submit"> <span class="subscrib-text">Підписатися</span>
+              <svg width="24" height="24">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
